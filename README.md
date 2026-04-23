@@ -1,77 +1,64 @@
-# 🤖 Gemini Chatbot with Streamlit
+🌐 Website Chatbot using Groq API
 
-A simple yet powerful chatbot built with LangChain, Google Gemini API, and Streamlit.
+This project is a website-integrated chatbot powered by the Groq API, designed to provide fast and intelligent conversational responses. It can be embedded into any website to enhance user interaction, automate support, and improve user experience.
 
-## Features
+🚀 Features
+⚡ Ultra-fast responses using Groq API
+💬 Natural language conversation
+🌍 Easy integration with any website
+🧠 Context-aware replies (if implemented)
+🎨 Customizable UI (if frontend included)
+🛠️ Tech Stack
+Frontend: HTML / CSS / JavaScript (modify as per your project)
+Backend: Node.js / Python (modify accordingly)
+API: Groq API
+Other Tools: Fetch / Axios / Express (if used)
+📦 Installation
+Clone the repository:
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+Install dependencies:
+npm install
 
-- ✨ Real-time chat interface using Streamlit
-- 🧠 Powered by Google's Gemini AI model
-- 💾 Conversation memory for context-aware responses
-- 🎨 Clean and intuitive UI
-- 🔄 Easy to clear chat history
+or (if Python)
 
-## Setup Instructions
-
-### 1. Install Dependencies
-
-```bash
 pip install -r requirements.txt
-```
+🔑 Environment Variables
 
-### 2. Get Gemini API Key
+Create a .env file in the root directory and add:
 
-1. Go to [Google AI Studio](https://makersuite.google.com/app/apikey)
-2. Click "Get API Key"
-3. Create a new API key
-4. Copy the API key
+GROQ_API_KEY=your_api_key_here
 
-### 3. Configure .env File
+⚠️ Never expose your API key publicly.
 
-Open `.env` file and replace `your_api_key_here` with your actual Gemini API key:
+▶️ Running the Project
 
-```
-GEMINI_API_KEY=your_actual_api_key_here
-```
+For Node.js:
 
-### 4. Run the Chatbot
+npm start
 
-```bash
-streamlit run app.py
-```
+For Python:
 
-The chatbot will open in your browser at `http://localhost:8501`
+python app.py
+🌐 Usage
+Open your browser and go to:
+http://localhost:3000
 
-## Files
+(or your configured port)
 
-- **app.py** - Main Streamlit UI application
-- **chatbot.py** - Chatbot logic using LangChain and Gemini
-- **.env** - Environment variables (add your API key here)
-- **requirements.txt** - Python dependencies
-
-## Usage
-
-1. Type your message in the input field
-2. Click "Send ➤" or press Enter
-3. Wait for the bot's response
-4. Use "Clear Chat History" button to reset the conversation
-
-## Customization
-
-You can modify the following in `chatbot.py`:
-- `temperature=0.7` - Adjust response creativity (0-1)
-- `model="gemini-pro"` - Use different Gemini models
-- Memory type - Switch from `ConversationBufferMemory` to other memory types
-
-## Troubleshooting
-
-- **API Key Error**: Make sure your .env file has the correct API key
-- **Module Not Found**: Run `pip install -r requirements.txt`
-- **Port Already in Use**: Run `streamlit run app.py --server.port 8502`
-
-## Requirements
-
-- Python 3.8 or higher
-- Active internet connection
-- Valid Gemini API key
-
-Enjoy chatting with Gemini! 🚀
+Start chatting with the bot directly on the website.
+📁 Project Structure
+├── public/        # Frontend files
+├── server/        # Backend logic
+├── .env           # Environment variables
+├── package.json   # Dependencies
+└── README.md
+🧩 How It Works
+User sends a message via the chat interface.
+Message is sent to the backend server.
+Backend calls the Groq API.
+Response is returned and displayed on the UI.
+⚙️ Customization
+Modify chatbot UI in frontend files
+Adjust API parameters for different responses
+Add memory or context handling for better conversations
