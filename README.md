@@ -39,11 +39,6 @@ npm start
 For Python:
 
 python app.py
-🌐 Usage
-Open your browser and go to:
-http://localhost:3000
-
-(or your configured port)
 
 Start chatting with the bot directly on the website.
 📁 Project Structure
